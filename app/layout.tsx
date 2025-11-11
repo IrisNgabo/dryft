@@ -16,9 +16,9 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Dryft Rwanda - Transform Urban Mobility",
+  title: "Dryft Rwanda – Rwanda's First Eco-Friendly Ride-Hailing Platform",
   description:
-    "Dryft Rwanda is a homegrown ride-hailing and mobility platform transforming the way people move around Rwandan cities.",
+    "Ride clean and smart with Dryft Rwanda — the electric and hybrid ride-hailing platform redefining sustainable transport in Rwanda.",
   generator: "v0.app",
   icons: {
     icon: [

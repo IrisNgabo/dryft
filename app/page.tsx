@@ -4,6 +4,9 @@ import Mission from "@/components/mission"
 import WhyDryft from "@/components/why"
 import Services from "@/components/services"
 import VehicleTypes from "@/components/vehicle"
+import HowItWorks from "@/components/how-it-works"
+import Safety from "@/components/safety"
+import Sustainability from "@/components/sustainability"
 import Partners from "@/components/partners"
 import AppStore from "@/components/app-store"
 import FAQ from "@/components/faq"
@@ -27,6 +30,9 @@ export default function Home() {
         <WhyDryft />
         <Services />
         <VehicleTypes />
+        <HowItWorks />
+        <Safety />
+        <Sustainability />
         <Partners />
         <AppStore />
         <FAQ />
