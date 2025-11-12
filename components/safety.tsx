@@ -9,7 +9,7 @@ export default function Safety() {
     },
     {
       title: "Vehicle Inspections",
-      description: "Vehicle inspections every month.",
+      description: "Vehicle inspections every 3 months.",
       icon: "🔍",
     },
     {
@@ -48,7 +48,7 @@ export default function Safety() {
   ]
 
   return (
-    <section id="safety" className="py-20 md:py-32 bg-secondary/20">
+    <section className="py-20 md:py-32 bg-secondary/20 min-h-[60vh]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16 space-y-4 animate-float">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Safety & Compliance</h2>

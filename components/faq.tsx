@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
@@ -14,12 +15,12 @@ export default function FAQ() {
     {
       question: "What payment methods does Dryft accept?",
       answer:
-        "We accept multiple payment options including cash, credit/debit cards, and mobile money (MTN Mobile Money, Airtel Money). You can save your preferred payment method in the app for faster checkout.",
+        "Dryft is cashless. We accept credit/debit cards and mobile money (MTN Mobile Money, Airtel Money). You can save your preferred payment method in the app for faster checkout.",
     },
     {
       question: "How much does a Dryft ride cost?",
       answer:
-        "Prices vary based on the ride type and distance. Dryft Lite starts from $0.50, Dryft Plus from $1.00, and Dryft Business from $2.00. You'll see the estimated fare before confirming your ride.",
+        "Prices vary based on the ride type and distance. We offer Economy, 7-Seater, Premium, and Corporate options. You'll see the estimated fare before confirming your ride, with transparent pricing and no hidden fees.",
     },
     {
       question: "Are Dryft drivers background checked?",
@@ -39,7 +40,7 @@ export default function FAQ() {
   ]
 
   return (
-    <section id="faq" className="py-20 md:py-32 bg-secondary/30">
+    <section className="py-20 md:py-32 bg-secondary/30 min-h-[60vh]">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16 animate-float">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Frequently Asked Questions</h2>
@@ -50,7 +51,7 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="rounded-lg border border-border bg-card overflow-hidden transition-all duration-300 animate-slide-left"
+              className="rounded-lg border border-border bg-card/80 hover:bg-card overflow-hidden transition-all duration-300 animate-slide-left shadow-sm hover:shadow-md"
               style={{ animationDelay: `${index * 50}ms` }}
             >
               <button
@@ -83,9 +84,12 @@ export default function FAQ() {
         <div className="mt-12 p-8 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-center">
           <h3 className="text-xl font-semibold mb-3">Didn't find your answer?</h3>
           <p className="text-muted-foreground mb-4">Our support team is here to help 24/7</p>
-          <button className="px-6 py-2 bg-primary text-primary-foreground rounded-full hover:bg-accent transition-colors font-semibold text-sm">
+          <Link
+            href="/contact"
+            className="inline-block px-6 py-2 bg-primary text-primary-foreground rounded-full hover:bg-accent transition-colors font-semibold text-sm"
+          >
             Contact Support
-          </button>
+          </Link>
         </div>
       </div>
     </section>
