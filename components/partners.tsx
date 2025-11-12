@@ -16,7 +16,7 @@ export default function Partners() {
   ]
 
   return (
-    <section id="partners" className="py-20 md:py-32 bg-background">
+    <section className="py-20 md:py-32 bg-background min-h-[60vh]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16 animate-float">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Partnerships</h2>
@@ -55,6 +55,54 @@ export default function Partners() {
                 <p className="text-sm text-muted-foreground">{item.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Join Dryft Section */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold mb-12 text-center text-foreground">Join Dryft</h3>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* For Drivers */}
+            <div className="p-8 rounded-2xl border border-border bg-card hover:border-primary/40 transition-all duration-300 shadow-green-sm hover:shadow-green-md">
+              <h4 className="text-2xl font-bold mb-6 text-foreground">For Drivers</h4>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span>Earn competitively with flexible hours</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span>Drive electric or hybrid vehicles</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span>Training and driver support programs</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span>Transparent payment system</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* For Business Partners */}
+            <div className="p-8 rounded-2xl border border-border bg-card hover:border-primary/40 transition-all duration-300 shadow-green-sm hover:shadow-green-md">
+              <h4 className="text-2xl font-bold mb-6 text-foreground">For Business Partners</h4>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span>Fleet management and branding opportunities</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span>Corporate ride programs</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span>Custom mobility solutions</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 

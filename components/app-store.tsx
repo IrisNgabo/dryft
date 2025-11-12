@@ -2,7 +2,7 @@
 
 export default function AppStore() {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
+    <section id="app-store" className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
@@ -94,53 +94,6 @@ export default function AppStore() {
             </button>
           </div>
 
-          {/* Join Dryft Section */}
-          <div className="pt-12 border-t border-border/30">
-            <h3 className="text-3xl font-bold mb-8 text-center">Join Dryft</h3>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {/* For Drivers */}
-              <div className="p-8 rounded-2xl border border-border bg-card hover:border-primary/40 transition-all duration-300">
-                <h4 className="text-2xl font-bold mb-4 text-foreground">For Drivers</h4>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Earn competitively with flexible hours</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Drive electric or hybrid vehicles</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Training and driver support programs</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Transparent payment system</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* For Business Partners */}
-              <div className="p-8 rounded-2xl border border-border bg-card hover:border-primary/40 transition-all duration-300">
-                <h4 className="text-2xl font-bold mb-4 text-foreground">For Business Partners</h4>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Fleet management and branding opportunities</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Corporate ride programs</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Custom mobility solutions</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
