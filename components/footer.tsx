@@ -58,14 +58,14 @@ export default function Footer() {
             <h4 className="font-bold mb-6 text-lg text-white">Services</h4>
             <ul className="space-y-3 text-sm text-gray-300">
               <li>
-                <a href="#" className="hover:text-white transition-colors duration-200">
+                <Link href="/riders" className="hover:text-white transition-colors duration-200">
                   For Riders
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors duration-200">
+                <Link href="/drivers" className="hover:text-white transition-colors duration-200">
                   For Drivers
-                </a>
+                </Link>
               </li>
               <li>
                 <Link href="/fleet" className="hover:text-white transition-colors duration-200">
@@ -90,9 +90,9 @@ export default function Footer() {
             <h4 className="font-bold mb-6 text-lg text-white">Legal</h4>
             <ul className="space-y-3 text-sm text-gray-300">
               <li>
-                <a href="#" className="hover:text-white transition-colors duration-200">
+                <Link href="/privacy" className="hover:text-white transition-colors duration-200">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
                 <Link href="/terms" className="hover:text-white transition-colors duration-200">
@@ -120,9 +120,9 @@ export default function Footer() {
               <p className="mt-2 text-xs">Eco-Friendly Rides for a Sustainable Future.</p>
             </div>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-white transition-colors duration-200">
+              <Link href="/privacy" className="hover:text-white transition-colors duration-200">
                 Privacy Policy
-              </a>
+              </Link>
               <Link href="/terms" className="hover:text-white transition-colors duration-200">
                 Terms & Conditions
               </Link>
