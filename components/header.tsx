@@ -19,16 +19,13 @@ export default function Header() {
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#about" className="text-sm font-medium hover:text-primary transition-colors">
             About Us
           </Link>
-          <Link href="/fleet" className="text-sm font-medium hover:text-primary transition-colors">
-            Our Fleet
-          </Link>
-          <Link href="/services" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#services" className="text-sm font-medium hover:text-primary transition-colors">
             Services
           </Link>
-          <Link href="/faq" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#faq" className="text-sm font-medium hover:text-primary transition-colors">
             FAQ
           </Link>
         </nav>
@@ -61,22 +58,19 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden border-t border-border bg-background p-4">
           <nav className="flex flex-col gap-4">
-            <Link href="/about" className="text-sm font-medium hover:text-primary">
+            <Link href="/#about" className="text-sm font-medium hover:text-primary" onClick={() => setIsMenuOpen(false)}>
               About Us
             </Link>
-            <Link href="/fleet" className="text-sm font-medium hover:text-primary">
-              Our Fleet
-            </Link>
-            <Link href="/services" className="text-sm font-medium hover:text-primary">
+            <Link href="/#services" className="text-sm font-medium hover:text-primary" onClick={() => setIsMenuOpen(false)}>
               Services
             </Link>
-            <Link href="/faq" className="text-sm font-medium hover:text-primary">
+            <Link href="/#faq" className="text-sm font-medium hover:text-primary" onClick={() => setIsMenuOpen(false)}>
               FAQ
             </Link>
-            <Link href="/contact" className="text-sm font-medium hover:text-primary">
+            <Link href="/contact" className="text-sm font-medium hover:text-primary" onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
-            <Link href="/partners" className="text-sm font-medium hover:text-primary">
+            <Link href="/partners" className="text-sm font-medium hover:text-primary" onClick={() => setIsMenuOpen(false)}>
               Partner
             </Link>
           </nav>
