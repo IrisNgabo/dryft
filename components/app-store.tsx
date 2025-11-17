@@ -30,24 +30,48 @@ export default function AppStore() {
           <div className="grid md:grid-cols-2 gap-6 pt-8">
             {[
               {
-                icon: "⚡",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                ),
                 title: "Lightning Fast",
                 desc: "One-tap booking in seconds",
+                color: "text-yellow-500",
               },
               {
-                icon: "📍",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                ),
                 title: "Real-Time Tracking",
                 desc: "Know exactly where your ride is",
+                color: "text-red-500",
               },
               {
-                icon: "💳",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                  </svg>
+                ),
                 title: "Multiple Payments",
                 desc: "Cash, card, or mobile money",
+                color: "text-amber-500",
               },
               {
-                icon: "🎯",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" strokeWidth={2} />
+                    <circle cx="12" cy="12" r="6" strokeWidth={2} />
+                    <circle cx="12" cy="12" r="2" strokeWidth={2} />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2v4m0 12v4M2 12h4m12 0h4" />
+                  </svg>
+                ),
                 title: "Precise Pricing",
                 desc: "No hidden fees, ever",
+                color: "text-blue-500",
               },
             ].map((benefit, idx) => (
               <div
@@ -60,7 +84,9 @@ export default function AppStore() {
                 }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="text-3xl group-hover:scale-110 transition-transform">{benefit.icon}</div>
+                  <div className={`${benefit.color} group-hover:scale-110 transition-transform flex-shrink-0`}>
+                    {benefit.icon}
+                  </div>
                   <div className="text-left">
                     <h4 className="font-semibold mb-1">{benefit.title}</h4>
                     <p className="text-sm text-muted-foreground">{benefit.desc}</p>
@@ -72,26 +98,62 @@ export default function AppStore() {
 
           {/* Download Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-            <button className="px-8 py-4 bg-foreground text-background rounded-xl hover:bg-primary hover:shadow-xl transition-all font-semibold flex items-center justify-center gap-3 group">
+            {/* App Store Badge */}
+            <a
+              href="#"
+              className="inline-flex items-center gap-3 px-4 py-3 bg-black text-white rounded-lg hover:opacity-90 transition-opacity border border-gray-700 shadow-lg"
+              style={{ minWidth: "180px" }}
+            >
+              {/* Apple Logo */}
               <svg
-                className="w-6 h-6 group-hover:scale-110 transition-transform"
-                fill="currentColor"
+                className="w-8 h-8 flex-shrink-0"
                 viewBox="0 0 24 24"
+                fill="currentColor"
               >
-                <path d="M17.05 13.5c0 .65.07 1.29.18 1.9l-6.45 5c-.68-.52-1.64-.81-2.59-.81-2.4 0-4.35 1.95-4.35 4.35S5.6 29 8 29s4.35-1.95 4.35-4.35c0-.89-.26-1.73-.71-2.46l6.05-4.69c1.26 1.48 3.02 2.38 4.96 2.38 3.59 0 6.5-2.91 6.5-6.5s-2.91-6.5-6.5-6.5c-3.59 0-6.5 2.91-6.5 6.5z" />
+                <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
               </svg>
-              App Store
-            </button>
-            <button className="px-8 py-4 bg-gradient-to-r from-primary to-accent text-background rounded-xl hover:shadow-xl transition-all font-semibold flex items-center justify-center gap-3 group">
+              {/* App Store Text */}
+              <div className="flex flex-col items-start">
+                <span className="text-[10px] leading-tight">Download on the</span>
+                <span className="text-lg font-semibold leading-tight -mt-0.5">App Store</span>
+              </div>
+            </a>
+
+            {/* Google Play Badge */}
+            <a
+              href="#"
+              className="inline-flex items-center gap-3 px-4 py-3 bg-black text-white rounded-lg hover:opacity-90 transition-opacity border border-gray-700 shadow-lg"
+              style={{ minWidth: "180px" }}
+            >
+              {/* Google Play Logo */}
               <svg
-                className="w-6 h-6 group-hover:scale-110 transition-transform"
-                fill="currentColor"
+                className="w-8 h-8 flex-shrink-0"
                 viewBox="0 0 24 24"
+                fill="none"
               >
-                <path d="M3 13.5l.120.886c.24 1.697 1.484 2.957 3.365 3.426.46.107.936.163 1.415.163h12.2c.479 0 .955-.056 1.415-.163 1.881-.469 3.125-1.729 3.365-3.426L21 13.5M12 1v10m5.293-6.293l-7.07 7.07m0-7.07l-7.07 7.07" />
+                <path
+                  d="M1.3 24l11.4-11.3L1.3 1.4 1.3 24z"
+                  fill="#00A0FF"
+                />
+                <path
+                  d="M12.7 12.7L24 24l-11.3-11.3z"
+                  fill="#00C853"
+                />
+                <path
+                  d="M1.3 1.4l11.4 11.3L1.3 24V1.4z"
+                  fill="#FFD600"
+                />
+                <path
+                  d="M12.7 12.7L24 0 12.7 12.7z"
+                  fill="#FF6D00"
+                />
               </svg>
-              Google Play
-            </button>
+              {/* Google Play Text */}
+              <div className="flex flex-col items-start">
+                <span className="text-[10px] leading-tight">GET IT ON</span>
+                <span className="text-lg font-semibold leading-tight -mt-0.5">Google Play</span>
+              </div>
+            </a>
           </div>
 
         </div>
