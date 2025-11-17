@@ -30,8 +30,9 @@ export default function PrivacyPage() {
           <div className="space-y-8">
             {/* Section 1 */}
             <div className="bg-card border border-border/50 rounded-xl p-6 md:p-8 shadow-green-sm">
-              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
-                <span>1️⃣</span> Who We Are
+              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-3">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">1</span>
+                <span>Who We Are</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Dryft Rwanda is a sustainable ride-hailing platform that connects riders with drivers of electric and hybrid vehicles across Rwanda.
@@ -43,8 +44,9 @@ export default function PrivacyPage() {
 
             {/* Section 2 */}
             <div className="bg-card border border-border/50 rounded-xl p-6 md:p-8 shadow-green-sm">
-              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
-                <span>2️⃣</span> Information We Collect
+              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-3">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">2</span>
+                <span>Information We Collect</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 We collect the following categories of data to deliver and improve our services:
@@ -125,8 +127,9 @@ export default function PrivacyPage() {
 
             {/* Section 3 */}
             <div className="bg-card border border-border/50 rounded-xl p-6 md:p-8 shadow-green-sm">
-              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
-                <span>3️⃣</span> How We Use Your Information
+              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-3">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">3</span>
+                <span>How We Use Your Information</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Your data is used strictly to provide, improve, and secure our services.
@@ -172,8 +175,9 @@ export default function PrivacyPage() {
 
             {/* Section 4 */}
             <div className="bg-card border border-border/50 rounded-xl p-6 md:p-8 shadow-green-sm">
-              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
-                <span>4️⃣</span> How We Share Information
+              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-3">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">4</span>
+                <span>How We Share Information</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 We respect your privacy — we only share data where necessary:
@@ -207,8 +211,9 @@ export default function PrivacyPage() {
 
             {/* Section 5 */}
             <div className="bg-card border border-border/50 rounded-xl p-6 md:p-8 shadow-green-sm">
-              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
-                <span>5️⃣</span> Data Storage & Retention
+              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-3">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">5</span>
+                <span>Data Storage & Retention</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Your data is securely stored on encrypted servers within Rwanda or other approved jurisdictions.
@@ -237,8 +242,9 @@ export default function PrivacyPage() {
 
             {/* Section 6 */}
             <div className="bg-card border border-border/50 rounded-xl p-6 md:p-8 shadow-green-sm">
-              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
-                <span>6️⃣</span> Data Security
+              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-3">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">6</span>
+                <span>Data Security</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 We use strict security measures to protect your data, including:
@@ -268,8 +274,9 @@ export default function PrivacyPage() {
 
             {/* Section 7 */}
             <div className="bg-card border border-border/50 rounded-xl p-6 md:p-8 shadow-green-sm">
-              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
-                <span>7️⃣</span> Your Rights
+              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-3">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">7</span>
+                <span>Your Rights</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 As a Dryft user, you have the right to:
@@ -303,8 +310,9 @@ export default function PrivacyPage() {
 
             {/* Section 8 */}
             <div className="bg-card border border-border/50 rounded-xl p-6 md:p-8 shadow-green-sm">
-              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
-                <span>8️⃣</span> Cookies & Tracking Technologies
+              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-3">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">8</span>
+                <span>Cookies & Tracking Technologies</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Dryft uses cookies and similar tools to:
@@ -330,8 +338,9 @@ export default function PrivacyPage() {
 
             {/* Section 9 */}
             <div className="bg-card border border-border/50 rounded-xl p-6 md:p-8 shadow-green-sm">
-              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
-                <span>9️⃣</span> Children's Privacy
+              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-3">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">9</span>
+                <span>Children's Privacy</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Dryft services are intended for users aged 18 and above.
@@ -346,8 +355,9 @@ export default function PrivacyPage() {
 
             {/* Section 10 */}
             <div className="bg-card border border-border/50 rounded-xl p-6 md:p-8 shadow-green-sm">
-              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
-                <span>🔟</span> Policy Updates
+              <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-3">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">10</span>
+                <span>Policy Updates</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 We may update this Privacy Policy from time to time.
