@@ -2,6 +2,10 @@ import Header from "@/components/header"
 import Hero from "@/components/hero"
 import WhyDryft from "@/components/why"
 import HowItWorks from "@/components/how-it-works"
+import VehicleTypes from "@/components/vehicle"
+import AboutSection from "@/components/about-section"
+import Services from "@/components/services"
+import FAQ from "@/components/faq"
 import Transition from "@/components/transition"
 import AppStore from "@/components/app-store"
 import Footer from "@/components/footer"
@@ -19,8 +23,13 @@ export default function Home() {
       <div className="relative z-10">
         <Header />
         <Hero />
+         <AboutSection />
         <WhyDryft />
         <HowItWorks />
+        <VehicleTypes />
+       
+        <Services />
+        <FAQ />
         <Transition />
         <AppStore />
         <Footer />
