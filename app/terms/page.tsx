@@ -53,7 +53,10 @@ export default function TermsPage() {
 
             <div className="space-y-8">
               <div className="bg-card border border-border/50 rounded-xl p-6 shadow-green-sm">
-                <h3 className="text-xl font-bold mb-4 text-foreground">1. User Agreement</h3>
+                <h3 className="text-xl font-bold mb-4 text-foreground flex items-center gap-3">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">1</span>
+                  <span>User Agreement</span>
+                </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   By using Dryft Rwanda's ride-hailing platform, riders agree to use the service lawfully and in compliance 
                   with all applicable laws and regulations. Users must comply with the app's terms and guidelines at all times.
@@ -61,7 +64,10 @@ export default function TermsPage() {
               </div>
 
               <div className="bg-card border border-border/50 rounded-xl p-6 shadow-green-sm">
-                <h3 className="text-xl font-bold mb-4 text-foreground">2. Fare Calculation</h3>
+                <h3 className="text-xl font-bold mb-4 text-foreground flex items-center gap-3">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">2</span>
+                  <span>Fare Calculation</span>
+                </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Fares are automatically calculated based on distance and time. The pricing is transparent and displayed 
                   before you confirm your ride. All charges are final and non-negotiable.
@@ -69,7 +75,10 @@ export default function TermsPage() {
               </div>
 
               <div className="bg-card border border-border/50 rounded-xl p-6 shadow-green-sm">
-                <h3 className="text-xl font-bold mb-4 text-foreground">3. Cancellation Policy</h3>
+                <h3 className="text-xl font-bold mb-4 text-foreground flex items-center gap-3">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">3</span>
+                  <span>Cancellation Policy</span>
+                </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Cancellations made after a driver has been dispatched may incur cancellation fees. We encourage users 
                   to cancel rides promptly if plans change to avoid unnecessary charges.
@@ -77,7 +86,10 @@ export default function TermsPage() {
               </div>
 
               <div className="bg-card border border-border/50 rounded-xl p-6 shadow-green-sm">
-                <h3 className="text-xl font-bold mb-4 text-foreground">4. Safety & Liability</h3>
+                <h3 className="text-xl font-bold mb-4 text-foreground flex items-center gap-3">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">4</span>
+                  <span>Safety & Liability</span>
+                </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   While Dryft Rwanda ensures the highest safety standards for all rides, we are not liable for incidents 
                   caused by third parties or circumstances beyond our control. Users ride at their own discretion.
@@ -85,7 +97,10 @@ export default function TermsPage() {
               </div>
 
               <div className="bg-card border border-border/50 rounded-xl p-6 shadow-green-sm">
-                <h3 className="text-xl font-bold mb-4 text-foreground">5. Driver Conduct</h3>
+                <h3 className="text-xl font-bold mb-4 text-foreground flex items-center gap-3">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">5</span>
+                  <span>Driver Conduct</span>
+                </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   All drivers must maintain ethical, compliant, and safe conduct at all times. Drivers are required to 
                   follow traffic laws, respect passengers, and provide professional service. Violations may result in 
@@ -94,7 +109,10 @@ export default function TermsPage() {
               </div>
 
               <div className="bg-card border border-border/50 rounded-xl p-6 shadow-green-sm">
-                <h3 className="text-xl font-bold mb-4 text-foreground">6. Data Protection</h3>
+                <h3 className="text-xl font-bold mb-4 text-foreground flex items-center gap-3">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg shadow-md">6</span>
+                  <span>Data Protection</span>
+                </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   User data is protected under Rwanda's data protection laws. We are committed to maintaining the privacy 
                   and security of all user information in accordance with applicable regulations.
