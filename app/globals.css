@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Updated color scheme for Dryft - green and dark green/black theme */
   --background: oklch(0.98 0.01 120);
