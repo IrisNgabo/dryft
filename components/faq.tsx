@@ -40,7 +40,7 @@ export default function FAQ() {
   ]
 
   return (
-    <section className="py-20 md:py-32 bg-secondary/30 min-h-[60vh]">
+    <section id="faq" className="py-20 md:py-32 bg-secondary/30 min-h-[60vh] scroll-mt-20">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16 animate-float">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Frequently Asked Questions</h2>
