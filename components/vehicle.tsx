@@ -9,7 +9,7 @@ export default function VehicleTypes() {
       name: "Economy",
       description: "Affordable rides for daily commutes. Compact Electric & Hybrid vehicles designed for efficiency.",
       features: ["Affordable rates", "Eco-friendly", "Quick pickup", "Efficient travel"],
-      image: "/economy.jpeg",
+      image: "/economybg.png",
       color: "primary",
     },
     {
@@ -17,7 +17,7 @@ export default function VehicleTypes() {
       name: "7-Seater",
       description: "Spacious and comfortable for family or group travel — eco-friendly vans and SUVs for up to 6 passengers.",
       features: ["Spacious seating", "Group travel", "Family-friendly", "Extra luggage space"],
-      image: "/seater.png",
+      image: "/seaterbg.png",
       color: "accent",
     },
     {
@@ -25,7 +25,7 @@ export default function VehicleTypes() {
       name: "Premium",
       description: "Silent luxury and executive comfort. Ride in style with top-tier electric sedans.",
       features: ["Luxury vehicles", "Premium comfort", "Executive experience", "Top-tier service"],
-      image: "/premium.jpeg",
+      image: "/premiumbg.png",
       color: "primary",
     },
     {
@@ -33,7 +33,7 @@ export default function VehicleTypes() {
       name: "Corporate",
       description: "Tailored transport solutions for businesses and organizations. Monthly billing, dedicated support, and branded experiences.",
       features: ["Monthly billing", "Dedicated support", "Business solutions", "Branded experiences"],
-      image: "/corporate.jpeg",
+      image: "/corporatebg.png",
       color: "accent",
     },
   ]
@@ -64,13 +64,13 @@ export default function VehicleTypes() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-accent/0 group-hover:from-primary/5 group-hover:to-accent/5 transition-all duration-300" />
               <div className="relative">
-                <div className="w-20 h-20 mb-4 mx-auto group-hover:scale-110 transition-transform duration-300 relative">
+                <div className="w-48 h-48 md:w-56 md:h-56 mb-6 mx-auto group-hover:scale-110 transition-transform duration-300 relative">
                   <Image
                     src={vehicle.image}
                     alt={vehicle.name}
                     fill
                     className="object-contain"
-                    sizes="80px"
+                    sizes="(max-width: 768px) 192px, 224px"
                   />
                 </div>
 
